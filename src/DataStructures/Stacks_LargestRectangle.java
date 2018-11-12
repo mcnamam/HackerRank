@@ -21,7 +21,7 @@ public class Stacks_LargestRectangle {
             return 0;
         }
         // secondary base case, single-cell array has rectangle
-        // with size = cell's value
+        // with size = cell'currentText value
         if (h.length == 1) {
             return h[0];
         }
@@ -43,7 +43,7 @@ public class Stacks_LargestRectangle {
         int leftLargestRectangle = (int)largestRectangle(leftArr);
         int rightLargestRectangle = (int)largestRectangle(rightArr);
 
-        // if either left or right partition's largest rectangle
+        // if either left or right partition'currentText largest rectangle
         // is larger than case a), update the value
         if (leftLargestRectangle > largestRectangle) {
             largestRectangle = leftLargestRectangle;
